@@ -1,10 +1,7 @@
 import java.awt.geom.Point2D;
 
 public class Bus extends MotorVehicle implements Driveble , PublicTransfer  {
-    /**
-     * @author Simon Pikalov
-     * https://github.com/simon-pikalov
-     */
+
     private static  final double busDelay = 0.3;
     private static final int minSeats = 20;
     private static final int speedLimit = 120;

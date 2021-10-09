@@ -2,20 +2,17 @@ import java.awt.geom.Point2D;
 
 public interface Driveble {
 
-
     /**
      *
      * @param p set the position of vehicle to p
      */
     public void initPos(Point2D p);
 
-
     /**
      *
      * @return return the position of the vehicle
      */
     public Point2D getPos();
-
 
     /**
      *

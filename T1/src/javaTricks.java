@@ -1,75 +1,63 @@
 public class javaTricks {
 
-
-
-    enum Rank {
-        LIEUTENANT,
-        CAPTAIN,
-        MAJOR,
-        COLONEL,
-        GENERAL
+    enum LEVEL {
+        BEGINNER,
+        AMATEUR,
+        PROFESSIONAL,
+        WORLD_CLASS,
+        LEGENDARY
     }
 
     public static void noEnumExample(){
-        int rank = 2;
+        int level = 2;
 
-        switch (rank) {
+        switch (level) {
             case 1:
-                System.out.println("Lieutenant :*");
+                System.out.println("Beginner: *");
                 break;
             case 2:
-                System.out.println("Captain: **");
+                System.out.println("Amateur: **");
                 break;
             case 3:
-                System.out.println("Major :***");
+                System.out.println("Professional: ***");
                 break;
             case 4:
-                System.out.println("Colonel: ****");
+                System.out.println("World Class: ****");
                 break;
             case 5:
-                System.out.println("General *****");
+                System.out.println("Legendary *****");
                 break;
 
             default:
                 System.out.println("undefined");
         }
-
     }
 
     public static void EnumExample(){
-        Rank rank = Rank.LIEUTENANT;
-
-        switch (rank) {
-            case LIEUTENANT:
-                System.out.println("Lieutenant :*");
+        LEVEL level = LEVEL.WORLD_CLASS;
+        switch (level) {
+            case BEGINNER:
+                System.out.println("Beginner: *");
                 break;
-            case CAPTAIN:
-                System.out.println("Captain: **");
+            case AMATEUR:
+                System.out.println("Amateur: **");
                 break;
-            case MAJOR:
-                System.out.println("Major :***");
+            case PROFESSIONAL:
+                System.out.println("Professional: ***");
                 break;
-            case COLONEL:
-                System.out.println("Colonel: ****");
+            case WORLD_CLASS:
+                System.out.println("World Class: ****");
                 break;
-            case GENERAL:
-                System.out.println("General *****");
+            case LEGENDARY:
+                System.out.println("Legendary *****");
                 break;
 
             default:
                 System.out.println("undefined");
         }
-
     }
 
-
-
     public static void main(String[] args) {
-
-        double a = 1;
-        double b = 2;
-        double c = 3;
-
         int num = 1;
         double trick = (num % 2 == 0) ? 0 : 1;
         System.out.println(trick);
@@ -82,8 +70,5 @@ public class javaTricks {
 
         noEnumExample();
         EnumExample();
-
     }
-
-
 }

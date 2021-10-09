@@ -76,17 +76,6 @@ public class main {
         motorArrayList = generateMotorVehicleList();
         for(MotorVehicle m :motorArrayList){
             System.out.println(m.getWeight());
-
-
-
-
-
-
-
-            ///
-
-
-            //test
             HashMap<String,Driveble> map= generateLotMap();
             map.values();
 
