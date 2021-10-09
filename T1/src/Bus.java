@@ -16,7 +16,7 @@ public class Bus extends MotorVehicle implements Driveble , PublicTransfer  {
     }
     @Override
     public void setMaxSpeed(int maxSpeed) {
-        int constrainedMaxSpeed = (maxSpeed<=speedLimit) ? maxSpeed: speedLimit;
+        int constrainedMaxSpeed = Math.min(maxSpeed, speedLimit);
     }
 
     @Override
@@ -71,9 +71,5 @@ public class Bus extends MotorVehicle implements Driveble , PublicTransfer  {
         System.out.println(volvo9900.getMaxSpeed());
         MotorVehicle m = volvo9900;
         System.out.println(m.getMaxSpeed());
-        final int a =5;
-        final int[]b ={1,24,4};
-        int []c = {1,2,3};
-
     }
 }

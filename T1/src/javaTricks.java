@@ -31,7 +31,23 @@ public class javaTricks {
             default:
                 System.out.println("undefined");
         }
+
     }
+
+    /*
+    public static void noEnumExample(){
+        int level = 2;
+
+        switch (level) {
+            case 1 -> System.out.println("Beginner: *");
+            case 2 -> System.out.println("Amateur: **");
+            case 3 -> System.out.println("Professional: ***");
+            case 4 -> System.out.println("World Class: ****");
+            case 5 -> System.out.println("Legendary *****");
+            default -> System.out.println("undefined");
+        }
+    }
+     */
 
     public static void EnumExample(){
         LEVEL level = LEVEL.WORLD_CLASS;

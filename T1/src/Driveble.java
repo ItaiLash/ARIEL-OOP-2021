@@ -6,13 +6,13 @@ public interface Driveble {
      *
      * @param p set the position of vehicle to p
      */
-    public void initPos(Point2D p);
+    void initPos(Point2D p);
 
     /**
      *
      * @return return the position of the vehicle
      */
-    public Point2D getPos();
+    Point2D getPos();
 
     /**
      *
@@ -20,7 +20,7 @@ public interface Driveble {
      * @return the time for the trip
      * This function make the car drive from sec to dst with respect to it's fuel constipation and fuel capacity
      */
-    public double drive( Point2D dst);
+    double drive( Point2D dst);
 
 
 }
